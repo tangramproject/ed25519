@@ -1,0 +1,10 @@
+*.so
+*.suo
+*.db
+*.user
+*.make
+*.sln
+*.vcxproj*
+bin/
+obj/
+Makefile
