@@ -5,24 +5,26 @@ workspace "ed25519"
 project "ed25519"
 	kind "SharedLib"
 	language "C"
-	targetdir "bin/%{os.target()}/%{cfg.architecture}/%{cfg.buildcfg}"
 	defines { "NDEBUG", "ED25519_BUILD_DLL" }
 	optimize "On"
-	files { "**.h", "**.c" }
+	files { "src/*.h", "src/*.c" }
 
 	filter { "platforms:win-x86" }
 		system "windows"
 		architecture "x86"
+		targetdir "runtimes/win-x86/native"
 
     filter { "platforms:win-x64" }
 		system "windows"
 		architecture "x86_64"
+		targetdir "runtimes/win-x64/native"
 	  
 	filter { "platforms:linux-x64" }
 		system "linux"
 		architecture "x86_64"
+		targetdir "runtimes/linux-x64/native"
 
     filter { "platforms:osx-x64" }
-		toolset "clang"
 		system "macosx"
 		architecture "x86_64"
+		targetdir "runtimes/osx-x64/native"

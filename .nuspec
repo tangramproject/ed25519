@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Tangram.Ed25519</id>
+    <version>1.0.0</version>
+    <title>Tangram.Ed25519</title>
+    <authors>inkadnb</authors>
+    <owners>inkadnb</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/tangramproject/ed25519/blob/master/license.txt</licenseUrl>
+    <projectUrl>https://github.com/tangramproject/ed25519</projectUrl>
+    <iconUrl>https://avatars1.githubusercontent.com/u/37107370</iconUrl>
+    <description>This package contains platform-specific native code builds of Orson Peters' SUPERCOP Ed25519 implementation.</description>
+    <tags>Ed25519 Tangram ECDSA bitcoin</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="runtimes\**" target="runtimes/"/>  
+  </files>
+</package>

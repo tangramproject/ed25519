@@ -5,6 +5,9 @@
 *.make
 *.sln
 *.vcxproj*
+*.vs
 bin/
 obj/
+runtimes/
 Makefile
+*.nupkg
